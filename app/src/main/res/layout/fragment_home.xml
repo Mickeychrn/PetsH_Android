@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FavouriteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher_nohead_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/home_serach_textview"
+            android:layout_width="408dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_write"
+            android:hint="search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/home_search_cat_button"
+            android:layout_width="206dp"
+            android:layout_height="183dp"
+            android:drawableTop="@drawable/dog1"
+            android:text="Dog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_serach_textview"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <Button
+            android:id="@+id/home_search_dog_button"
+            android:layout_width="202dp"
+            android:layout_height="186dp"
+            android:drawableTop="@drawable/cat1"
+            android:text="Cat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.985"
+            app:layout_constraintStart_toEndOf="@+id/home_search_cat_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_serach_textview"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <Button
+            android:id="@+id/home_search_other_button"
+            android:layout_width="206dp"
+            android:layout_height="186dp"
+            android:drawableTop="@drawable/other1"
+            android:text="Other"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_search_cat_button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/home_search_all_button"
+            android:layout_width="205dp"
+            android:layout_height="183dp"
+            android:drawableTop="@drawable/all2"
+            android:text="All"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/home_search_other_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_search_dog_button"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_recommend_recycleview"
+            android:layout_width="408dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_search_all_button"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageButton
+            android:id="@+id/home_search_button"
+            android:layout_width="45dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:src="?android:attr/actionModeWebSearchDrawable"
+            app:layout_constraintBottom_toBottomOf="@+id/home_recommend_recycleview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.008" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Adorable Pets"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/home_recommend_recycleview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_search_other_button"
+            app:layout_constraintVertical_bias="0.671" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pet Category"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/home_search_cat_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_serach_textview"
+            app:layout_constraintVertical_bias="0.181" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

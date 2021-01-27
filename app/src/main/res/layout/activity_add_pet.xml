@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_nohead_background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher_nohead_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_pet_name"
+            android:layout_width="324dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="42dp"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_write"
+            android:ems="10"
+            android:hint="Pet Name"
+            app:layout_constraintBottom_toTopOf="@+id/add_pet_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/add_pet_category"
+            android:layout_width="326dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_write"
+            android:ems="10"
+            android:hint="Pet Category"
+            app:layout_constraintBottom_toTopOf="@+id/add_pet_gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_pet_name">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/add_pet_gender"
+            android:layout_width="323dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_write"
+            android:ems="10"
+            android:hint="Pet Gender"
+            app:layout_constraintBottom_toTopOf="@+id/add_pet_age"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_pet_category">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/add_pet_age"
+            android:layout_width="325dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_write"
+            android:ems="10"
+            android:hint="Pet Age"
+            app:layout_constraintBottom_toTopOf="@+id/add_pet_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_pet_gender">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/add_pet_description"
+            android:layout_width="325dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_write"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Description"
+            android:maxLines="3"
+            android:minLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/take_pet_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_pet_age">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/take_pet_photo"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="43dp"
+
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="10dp"
+            android:text="take pet photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_pet_description" />
+
+
+        <ImageView
+            android:id="@+id/take_pet_photo_image"
+            android:layout_width="297dp"
+            android:layout_height="314dp"
+
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/take_pet_photo"
+
+            />
+
+
+        <Button
+            android:id="@+id/add_pet_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="add pet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/take_pet_photo_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

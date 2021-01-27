@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "65489124933",
+    "firebase_url": "https://petsh-1b7e1.firebaseio.com",
+    "project_id": "petsh-1b7e1",
+    "storage_bucket": "petsh-1b7e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65489124933:android:bd358c162f81f292de6d2c",
+        "android_client_info": {
+          "package_name": "au.edu.sydney.comp5216.petsh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65489124933-ltkr8mls4fftdopvvttj3m5itepouj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD87OvTlIs9Km6rxbLFWX3qMCmD_ixgxkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65489124933-ltkr8mls4fftdopvvttj3m5itepouj2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
